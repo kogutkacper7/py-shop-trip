@@ -6,7 +6,7 @@ from app.shop import create_shops, distance
 
 
 def shop_trip() -> None:
-    with open("config.json", "r") as file:
+    with open("app/config.json", "r") as file:
         file_read = json.load(file)
 
     customers = make_customer_from_json_file(file_read)
