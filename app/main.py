@@ -79,7 +79,7 @@ def shop_trip() -> None:
                 f"{customer.name} doesn't have enough money "
                 f"to make a purchase in any shop"
             )
-            break
+            continue
         else:
             print(f"{customer.name} rides to {shop_for_customer}\n")
             customer.location = shop_location
