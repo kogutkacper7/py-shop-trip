@@ -83,10 +83,10 @@ def shop_trip() -> None:
         else:
             print(f"{customer.name} rides to {shop_for_customer}\n")
             customer.location = shop_location
-            print(f"Date: "
-                  f"{str(datetime.datetime.now().strftime(
-                      "%d/%m/%Y %H:%M:%S"))}"
-                  )
+            current_date = (
+                datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+            )
+            print(f"Date: {current_date}")
             print(f"Thanks, {customer.name}, for your purchase!")
             print("You have bought:")
             for product, value in products_price.items():
